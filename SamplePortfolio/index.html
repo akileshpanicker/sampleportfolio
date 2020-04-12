@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Portfolio</title>
+	
+	<script src="https://kit.fontawesome.com/678a17f4b7.js" crossorigin="anonymous"></script>
+
+	<script src="f1.js"></script>
+
+	<link rel="stylesheet" href="style.css">
+
+  
+  <style>
+      * {
+        box-sizing: border-box
+      }
+
+      .mySlides {
+        display: none
+      }
+      
+      img {
+        vertical-align: middle;
+        width: 80%;
+        display: inline-block;
+      }
+
+      .slideshow-container {
+      max-width: 50%;
+
+      position: relative;
+      display: inline-block;
+      margin: auto;
+      margin-right: 20%;
+
+      }
+      /* Next & previous buttons */
+      .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 5%;
+      margin-top: -5%;
+      margin-right: 20%;
+      color: white;
+      font-weight: bold;
+      font-size: 2em;
+      
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+
+      }
+      /* Position the "next button" to the right */
+      .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+
+      }
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+      }
+      /* Caption text */
+      .text {
+      color: #ffffff;
+      font-size: 1.5em;
+      position: absolute;
+      bottom: 2%;
+      width: 100%;
+      text-align: left;
+
+      }
+      
+      /* Fading animation */
+      .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+      }
+      @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+      .prev, .next, .text {
+        font-size: 0.2em;
+      }
+      }
+
+    </style>
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+    	<span class="navbar-toggle" id="js-navbar-toggle"><i class="fas fa-bars"></i></span>
+    
+    	<a class = "logo2">Akilesh Panicker</a>
+    	<ul class="main-nav" id="js-menu">
+      		<li>
+     		<a href="#About" class="nav-links">About</a>
+      		</li>
+
+			<li>
+			<a href="#Skills" class="nav-links">Skills</a>
+			</li>
+	      
+	      	<li>
+	        <a href="#Hobbies" class="nav-links">Hobbies</a>
+	      	</li>
+     	</ul>
+
+    </nav>
+
+
+
+
+	<div id = "About" class="container">
+		<svg>
+    		<symbol id="s-text">
+				<text y="40%">About</text>
+			</symbol>
+
+			<g class = "g-ants">
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+			</g>
+		</svg>
+	</div>
+
+	<div class = "one"> 
+	I am a self-motivated and hard working engineer with a great passion for programming and coding and an enthusiastic front and backend developer who likes making beautiful and smart things through coding.
+	</div>
+
+
+
+	<div id = "Skills" class="container">
+		<svg>
+    		<symbol id="s-text2">
+				<text y="40%">Skills</text>
+			</symbol>
+
+			<g class = "g-ants">
+				<use xlink:href="#s-text2" class="text-copy"></use>
+				<use xlink:href="#s-text2" class="text-copy"></use>
+				<use xlink:href="#s-text2" class="text-copy"></use>
+				<use xlink:href="#s-text2" class="text-copy"></use>
+				<use xlink:href="#s-text2" class="text-copy"></use>
+			</g>
+		</svg>
+	</div>
+
+
+
+
+
+
+
+<div id="cardsrow">
+	<div class="card-container">
+	  <div class="card">
+	    <div class="side"><img src="images/python.png" alt="python"></div>
+	    <div class="side back" id="card1">Python</div>
+	  </div>  
+	</div>
+
+
+	<div class="card-container">
+	  <div class="card">
+	    <div class="side"><img src="images/html.png" alt="html"></div>
+	    <div class="side back" id="card2">HTML</div>
+	  </div>
+	  
+	</div>
+
+
+
+	<div class="card-container">
+	  <div class="card">
+	    <div class="side"><img src="images/css.png" alt="css"></div>
+	    <div class="side back" id="card3">CSS</div>
+	  </div>
+	  
+	</div>
+
+	<div class="card-container">
+	  <div class="card">
+	    <div class="side"><img src="images/tensorflow.png" alt="tensorflow"></div>
+	    <div class="side back" id="card4">Tensorflow</div>
+	  </div>
+	  
+	</div>
+
+
+	<div class="card-container">
+	  <div class="card">
+	    <div class="side"><img src="images/angular.png" alt="angular"></div>
+	    <div class="side back" id="card5">Angular</div>
+	  </div>  
+	</div>
+
+	
+	<div class="card-container">
+	  <div class="card">
+	    <div class="side"><img src="images/bootstrap.png" alt="bootstrap"></div>
+	    <div class="side back" id="card6">Bootstrap</div>
+	  </div>
+	</div>
+
+</div>
+
+
+
+
+
+	<div id = "Hobbies" class="container">
+		<svg>
+    		<symbol id="s-text4">
+				<text y="40%">Hobbies</text>
+			</symbol>
+
+			<g class = "g-ants">
+				<use xlink:href="#s-text4" class="text-copy"></use>
+				<use xlink:href="#s-text4" class="text-copy"></use>
+				<use xlink:href="#s-text4" class="text-copy"></use>
+				<use xlink:href="#s-text4" class="text-copy"></use>
+				<use xlink:href="#s-text4" class="text-copy"></use>
+			</g>
+		</svg>
+	</div>
+
+
+
+
+
+
+
+    <div class="slideshow-container">
+      
+      <div class="mySlides fade">
+        <img src="images/cricket.jpg" alt = "cricket">
+        <div class="text">Cricket</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/guitar.jpg" alt = "guitar">
+        <div class="text">Guitar</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="images/football.jpg" alt = "football">
+        <div class="text">Football</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/piano.jpg" alt = "piano">
+        <div class="text">Piano</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        slides[slideIndex-1].style.display = "block";  
+      }
+    </script>
+
+
+
+
+	<div class = "container2">
+	<footer>
+		Contact Me     
+		
+		<a class = "logo3" href="https://twitter.com"><i class="fab fa-twitter fa-1x"></i></a>
+
+		<a class = "logo3" href="https://facebook.com"><i class="fab fa-facebook-f fa-1x"></i></a>
+
+		<a class = "logo3" href="https://github.com"><i class="fa fa-github fa-1x"></i></a>
+
+		<a class = "logo3" href="https://www.linkedin.com"><i class="fa fa-linkedin-square"></i></a>
+
+	</footer>
+	</div>
+
+</body>
+</html>
